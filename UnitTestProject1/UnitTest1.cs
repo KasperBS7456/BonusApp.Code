@@ -65,7 +65,7 @@ namespace UnitTestProject1
             Assert.AreEqual(43.0, order.GetTotalPrice());
         }
         [TestMethod]
-        public void GetBonusAnonymous_Test()
+        public void GetBonusAnonymous_Test() 
         {
             order.Bonus = delegate (double amount) { return amount/10; }; // <- Change to anonymous delegate
             Assert.AreEqual(4.5, order.GetBonus());
